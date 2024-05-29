@@ -16,7 +16,7 @@ TEST(Calculator, GetMinus1) {
 }
 
 TEST(Calculator, GetMinus2) {
-	const int a = 10;
+	const int a = 100000;
 	const int b = 20;
 	int expect = a - b;
 	int actual = getMinus(a, b);
