@@ -38,3 +38,13 @@ TEST(Calculator, GetSum) {
 
 	EXPECT_EQ(expect, actual);
 }
+
+TEST(Calculator, GetDivide) {
+        const int a = 10;
+        const int b = 5;
+        int expect = a / b;
+        int actual = getDivide(a, b);
+
+        EXPECT_EQ(expect, actual);
+}
+
