@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "../Calc/cal.cpp"
 
+
 TEST(Calculator, getZegoptest) {
 	int a = 3;
 	int expect = a * a;
@@ -14,10 +15,20 @@ TEST(cal_test, GopTest) {
 	EXPECT_EQ(actual, expected);
 }
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST(Calculator, GetMinus1) {
+	const int a = 10;
+	const int b = 20;
+	int expect = a - b;
+	int actual = getMinus(a, b);
+
+	EXPECT_EQ(expect, actual);
 }
+
+TEST(Calculator, GetMinus2) {
+	const int a = 100000;
+	const int b = 20;
+	int expect = a - b;
+	int actual = getMinus(a, b);
 
 TEST(Calculator, GetSum) {
 	const int a = 10;
